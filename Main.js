@@ -10,7 +10,7 @@ setInterval(function(){
     ScreenWidth = window.innerWidth;
 
     //set the toolbar height
-    ToolbarHeight = ScreenHeight / 2;
+    ToolbarHeight = ScreenHeight / 5;
 
     //update the upper tools' size and position
     tools.style.width = ScreenWidth + 'px';
@@ -19,6 +19,6 @@ setInterval(function(){
     //update the logo's size and position
     logo.style.height = ToolbarHeight + 'px';
     logo.style.width = ToolbarHeight + 'px';
-    logo.style.left = ScreenWidth / 25 + 'px';
+    logo.style.left = ScreenWidth / 50 + 'px';
 
 }, 200);
