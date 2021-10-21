@@ -10,7 +10,7 @@ setInterval(function(){
     ScreenWidth = window.innerWidth;
 
     //set the toolbar height
-    ToolbarHeight = ScreenHeight / 5;
+    ToolbarHeight = ScreenHeight / 2;
 
     //update the upper tools' size and position
     tools.style.width = ScreenWidth + 'px';
