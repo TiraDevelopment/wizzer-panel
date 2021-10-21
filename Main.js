@@ -5,12 +5,13 @@ var ScreenHeight, ScreenWidth, ToolbarHeight;
 
 //consistently update the website's positions according to the screen size
 setInterval(function(){
+
     //get the screen's size
     ScreenHeight = window.innerHeight;
     ScreenWidth = window.innerWidth;
 
     //set the toolbar height
-    ToolbarHeight = ScreenHeight / 5;
+    ToolbarHeight = ScreenHeight / 7;
 
     //update the upper tools' size and position
     tools.style.width = ScreenWidth + 'px';
@@ -19,6 +20,6 @@ setInterval(function(){
     //update the logo's size and position
     logo.style.height = ToolbarHeight + 'px';
     logo.style.width = ToolbarHeight + 'px';
-    logo.style.left = ScreenWidth / 50 + 'px';
+    logo.style.left = ScreenWidth / 100 + 'px';
 
-}, 200);
+}, 200); 
