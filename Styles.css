@@ -1,24 +1,87 @@
 #tools{
-    width: 0    px;
-    height: 0px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    /*
-    the width and height is managed by javascript.
-    */
-    transition-duration: 3s;
-    border-radius: 2px;
-    background-color: rgb(40, 40, 100);
-}
-#logo{
     width: 0px;
     height: 0px;
     position: absolute;
     left: 0px;
     top: 0px;
-    /*
-    the width and height is managed by javascript.
-    */
-    transition-duration: 3s;
+    /*the width and height is managed by javascript.*/
+    transition-duration: 2s;
+    border-radius: 2px;
+    background-color: rgb(40, 40, 100);
+}
+
+#logo{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;/*
+    the width and height is managed by javascript.*/
+    transition-duration: 2s;
+}
+
+#StartServer{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    /*the width and height is managed by javascript.*/
+    transition-duration: 2.5s;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 100);
+    border: none;
+
+    font-size: 0px;
+    /*text size is also managed by javascript.*/
+    color: rgb(100, 150, 200);
+}
+#StartServer:hover{
+    transition-duration: 500ms;
+    background-color: rgb(40, 40, 100);
+    cursor: pointer;
+}
+
+#StopServer{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    /*the width and height is managed by javascript.*/
+    transition-duration: 2.5s;
+    border-radius: 10px;
+    background-color: rgb(100, 50, 100);
+    border: none;
+
+    font-size: 0px;
+    /*text size is also managed by javascript.*/
+    color: rgb(200, 150, 200);
+}
+#StopServer:hover{
+    transition-duration: 500ms;
+    background-color: rgb(100, 40, 100);
+    cursor: pointer;
+}
+
+#RestartServer{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    /*the width and height is managed by javascript.*/
+    transition-duration: 2.5s;
+    border-radius: 10px;
+    background-color: rgb(50, 75, 100);
+    border: none;
+
+    font-size: 0px;
+    /*text size is also managed by javascript.*/
+    color: rgb(100, 200, 200);
+}
+#RestartServer:hover{
+    transition-duration: 500ms;
+    background-color: rgb(40, 100, 100);
+    cursor: pointer;
 }
