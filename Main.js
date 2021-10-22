@@ -30,11 +30,11 @@ setInterval(function(){
 
     //update the "Start Server"'s button's size and position
 
-    StartServer.style.height = ToolbarHeight * 0.75 + 'px';
-    StartServer.style.width = ToolbarHeight * 2.5 + 'px';
+    StartServer.style.height = ToolbarHeight * 1.25 + 'px';
+    StartServer.style.width = ToolbarHeight * 5 + 'px';
 
     StartServer.style.left = ScreenWidth - ToolbarHeight * 5.3 + 'px';
-    StartServer.style.top = ToolbarHeight * 1.5  + 'px';
+    StartServer.style.top = ToolbarHeight * 3 + 'px';
 
     //update it's text size
 
@@ -60,7 +60,7 @@ setInterval(function(){
         
         //update it's text size
         
-    RestartServer.style.fontSize = ToolbarHeight / 1 + 'px'; 
+    RestartServer.style.fontSize = ToolbarHeight / 3 + 'px'; 
 
 }, 200);
 
