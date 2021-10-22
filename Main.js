@@ -38,29 +38,29 @@ setInterval(function(){
 
     //update it's text size
 
-    StartServer.style.fontSize = ToolbarHeight / 1 + 'px';
+    StartServer.style.fontSize = ToolbarHeight / 2 + 'px';
 
     //update the "Stop Server"'s button's size and position
-    StopServer.style.height = ToolbarHeight * 0.75 + 'px';
-    StopServer.style.width = ToolbarHeight * 2.5 + 'px';
+    StopServer.style.height = ToolbarHeight * 1.25 + 'px';
+    StopServer.style.width = ToolbarHeight * 5 + 'px';
     
     StopServer.style.left = ScreenWidth - ToolbarHeight * 5.3 + 'px';
     StopServer.style.top = ToolbarHeight * 3.25 + 'px';
     
     //update it's text size
     
-    StopServer.style.fontSize = ToolbarHeight / 1 + 'px'; 
+    StopServer.style.fontSize = ToolbarHeight / 2 + 'px'; 
 
     //update the "Restart Server"'s button's size and position
-    RestartServer.style.height = ToolbarHeight * 0.75 + 'px';
-    RestartServer.style.width = ToolbarHeight * 2.5 + 'px';
+    RestartServer.style.height = ToolbarHeight * 1.25 + 'px';
+    RestartServer.style.width = ToolbarHeight * 5 + 'px';
         
     RestartServer.style.left = ScreenWidth - ToolbarHeight * 3 + 'px';
     RestartServer.style.top = ToolbarHeight * 3 + 'px';
         
         //update it's text size
         
-    RestartServer.style.fontSize = ToolbarHeight / 3 + 'px'; 
+    RestartServer.style.fontSize = ToolbarHeight / 2 + 'px'; 
 
 }, 200);
 
