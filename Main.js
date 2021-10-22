@@ -11,6 +11,7 @@ var ScreenHeight, ScreenWidth, ToolbarHeight;
 //consistently update the website's positions according to the screen size
 setInterval(function(){
 
+
     //get the screen's size
     ScreenHeight = window.innerHeight;
     ScreenWidth = window.innerWidth;
@@ -30,37 +31,37 @@ setInterval(function(){
 
     //update the "Start Server"'s button's size and position
 
-    StartServer.style.height = ToolbarHeight * 1.25 + 'px';
-    StartServer.style.width = ToolbarHeight * 5 + 'px';
+    StartServer.style.height = ToolbarHeight / 1.25 + 'px';
+    StartServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
 
-    StartServer.style.left = ScreenWidth - ToolbarHeight * 5.3 + 'px';
-    StartServer.style.top = ToolbarHeight * 1.5  + 'px';
+    StartServer.style.left = ScreenWidth - ScreenWidth / 3 + 'px';
+    StartServer.style.top = ToolbarHeight * 1.25  + 'px';
 
     //update it's text size
 
-    StartServer.style.fontSize = ToolbarHeight / 2 + 'px';
+    StartServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
 
     //update the "Stop Server"'s button's size and position
-    StopServer.style.height = ToolbarHeight * 1.25 + 'px';
-    StopServer.style.width = ToolbarHeight * 5 + 'px';
+    StopServer.style.height = ToolbarHeight / 1.25 + 'px';
+    StopServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
     
-    StopServer.style.left = ScreenWidth - ToolbarHeight * 5.3 + 'px';
-    StopServer.style.top = ToolbarHeight * 3.25 + 'px';
+    StopServer.style.left = ScreenWidth - ScreenWidth / 3 + 'px';
+    StopServer.style.top = ToolbarHeight * 2.25 + 'px';
     
     //update it's text size
     
-    StopServer.style.fontSize = ToolbarHeight / 2 + 'px'; 
+    StopServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
 
     //update the "Restart Server"'s button's size and position
-    RestartServer.style.height = ToolbarHeight * 1.25 + 'px';
-    RestartServer.style.width = ToolbarHeight * 5 + 'px';
+    RestartServer.style.height = ToolbarHeight / 1.25 + 'px';
+    RestartServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
         
-    RestartServer.style.left = ScreenWidth - ToolbarHeight * 5.3 + 'px';
-    RestartServer.style.top = ToolbarHeight * 5 + 'px';
+    RestartServer.style.left = ScreenWidth - ScreenWidth / 3 + 'px';
+    RestartServer.style.top = ToolbarHeight * 3.25 + 'px';
         
-        //update it's text size
-        
-    RestartServer.style.fontSize = ToolbarHeight / 2 + 'px'; 
+    //update it's text size
+
+    RestartServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
 
 }, 200);
 
