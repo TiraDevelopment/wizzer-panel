@@ -31,37 +31,37 @@ setInterval(function(){
 
     //update the "Start Server"'s button's size and position
 
-    StartServer.style.height = ToolbarHeight / 1.25 + 'px';
-    StartServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
+    StartServer.style.height = ToolbarHeight / 0.75 + 'px';
+    StartServer.style.width = ScreenWidth - ScreenWidth / 1 + 'px';
 
     StartServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
-    StartServer.style.top = ToolbarHeight * 1.25  + 'px';
+    StartServer.style.top = ToolbarHeight * 1  + 'px';
 
     //update it's text size
 
-    StartServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
+    StartServer.style.fontSize = ToolbarHeight / 4 + 'px'; 
 
     //update the "Stop Server"'s button's size and position
-    StopServer.style.height = ToolbarHeight / 1.25 + 'px';
-    StopServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
+    StopServer.style.height = ToolbarHeight / 0.75 + 'px';
+    StopServer.style.width = ScreenWidth - ScreenWidth / 1 + 'px';
     
     StopServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
-    StopServer.style.top = ToolbarHeight * 2.25 + 'px';
+    StopServer.style.top = ToolbarHeight * 1.95 + 'px';
     
     //update it's text size
     
-    StopServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
+    StopServer.style.fontSize = ToolbarHeight / 4 + 'px'; 
 
     //update the "Restart Server"'s button's size and position
-    RestartServer.style.height = ToolbarHeight / 1.25 + 'px';
-    RestartServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
+    RestartServer.style.height = ToolbarHeight / 0.75 + 'px';
+    RestartServer.style.width = ScreenWidth - ScreenWidth / 1 + 'px';
         
     RestartServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
-    RestartServer.style.top = ToolbarHeight * 3.25 + 'px';
+    RestartServer.style.top = ToolbarHeight * 2.95 + 'px';
         
     //update it's text size
 
-    RestartServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
+    RestartServer.style.fontSize = ToolbarHeight / 4 + 'px'; 
 
 }, 200);
 
