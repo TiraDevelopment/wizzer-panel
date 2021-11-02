@@ -67,15 +67,15 @@ setInterval(function(){
 
 function Start_Server()
 {
-    alert("Server Start Action.")
+    alert("Supposed to send HTTP request to Wizzer API")
 }
 
 function Stop_Server()
 {
-    alert("Server Stop Action.")
+    alert("Supposed to send HTTP request to Wizzer API")
 }
 
 function Restart_Server()
 {
-    alert("Server Restart Action.")
+    alert("Supposed to send HTTP request to Wizzer API")
 }
