@@ -6,11 +6,12 @@ var StartServer = document.getElementById("StartServer");
 var StopServer = document.getElementById("StopServer");
 var RestartServer = document.getElementById("RestartServer");
 
+var ServerName = document.getElementById("ServerName");
+
 var ScreenHeight, ScreenWidth, ToolbarHeight;
 
 //consistently update the website's positions according to the screen size
 setInterval(function(){
-
 
     //get the screen's size
     ScreenHeight = window.innerHeight;
@@ -35,7 +36,7 @@ setInterval(function(){
     StartServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
 
     StartServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
-    StartServer.style.top = ToolbarHeight * 1.25  + 'px';
+    StartServer.style.top = ToolbarHeight * 2  + 'px';
 
     //update it's text size
 
@@ -46,7 +47,7 @@ setInterval(function(){
     StopServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
     
     StopServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
-    StopServer.style.top = ToolbarHeight * 2.25 + 'px';
+    StopServer.style.top = ToolbarHeight * 3 + 'px';
     
     //update it's text size
     
@@ -57,11 +58,23 @@ setInterval(function(){
     RestartServer.style.width = ScreenWidth - ScreenWidth / 1.3 + 'px';
         
     RestartServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
-    RestartServer.style.top = ToolbarHeight * 3.25 + 'px';
+    RestartServer.style.top = ToolbarHeight * 4 + 'px';
         
     //update it's text size
 
     RestartServer.style.fontSize = ToolbarHeight / 5 + 'px'; 
+
+    //update the server name's position and size
+
+    ServerName.style.top = ToolbarHeight * 2 + 'px';
+    ServerName.style.left = ScreenWidth - ScreenWidth / 1.025 + 'px';
+
+    ServerName.style.width = ScreenWidth / 5 + 'px';
+    ServerName.style.height = ToolbarHeight * 1.5 + 'px';
+
+    //update it's text size
+
+    ServerName.style.fontSize = ToolbarHeight / 3 + 'px'; 
 
 }, 200);
 
