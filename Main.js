@@ -35,7 +35,7 @@ setInterval(function(){
     StartServer.style.height = ToolbarHeight / 3 + 'px';
     StartServer.style.width = ScreenWidth - ScreenWidth / 1.1 + 'px';
 
-    StartServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
+    StartServer.style.left = ScreenWidth - ScreenWidth / 8 + 'px';
     StartServer.style.top = ToolbarHeight * 2  + 'px';
 
     //update it's text size
@@ -46,7 +46,7 @@ setInterval(function(){
     StopServer.style.height = ToolbarHeight / 3 + 'px';
     StopServer.style.width = ScreenWidth - ScreenWidth / 1.1 + 'px';
     
-    StopServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
+    StopServer.style.left = ScreenWidth - ScreenWidth / 8 + 'px';
     StopServer.style.top = ToolbarHeight * 2.5 + 'px';
     
     //update it's text size
@@ -57,7 +57,7 @@ setInterval(function(){
     RestartServer.style.height = ToolbarHeight / 3 + 'px';
     RestartServer.style.width = ScreenWidth - ScreenWidth / 1.1 + 'px';
         
-    RestartServer.style.left = ScreenWidth - ScreenWidth / 4 + 'px';
+    RestartServer.style.left = ScreenWidth - ScreenWidth / 8 + 'px';
     RestartServer.style.top = ToolbarHeight * 3 + 'px';
         
     //update it's text size
