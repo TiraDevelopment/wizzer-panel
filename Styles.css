@@ -1,10 +1,9 @@
 #tools{
-    width: 0px;
-    height: 0px;
+    width: 100%;
+    height: 14.5%;
     position: absolute;
     left: 0px;
     top: 0px;
-    /*the width and height is managed by javascript.*/
     transition-duration: 2s;
     border-radius: 2px;
     background-color: rgb(40, 40, 100);
@@ -12,29 +11,25 @@
 }
 
 #logo{
-    width: 0px;
-    height: 0px;
+    /*width adjusted by javascript to prevent the logo from being stretched.*/
+    height: 14.5%;
     position: absolute;
-    left: 0px;
-    top: 0px;/*
-    the width and height is managed by javascript.*/
+    left: 1%;
+    top: 0px;
     transition-duration: 2s;
 }
 
 #StartServer{
-    width: 0px;
-    height: 0px;
+    width: 25.25%;
+    height: 12.25%;
     position: absolute;
-    left: 0px;
-    top: 50px;
-    /*the width and height is managed by javascript.*/
-    transition-duration: 1.5s;
+    left: 70%;
+    top: 30%;
     border-radius: 10px;
     background-color: rgb(50, 50, 100);
     border: none;
 
-    font-size: 0px;
-    /*text size is also managed by javascript.*/
+    font-size: 150%;
     color: rgb(100, 150, 200);
     box-shadow: 0 0 50px rgba(100, 150, 200, 0.25);
 }
@@ -45,19 +40,16 @@
 }
 
 #StopServer{
-    width: 0px;
-    height: 0px;
+    width: 25.25%;
+    height: 12.25%;
     position: absolute;
-    left: 0px;
-    top: 50px;
-    /*the width and height is managed by javascript.*/
-    transition-duration: 1.7s;
+    left: 70%;
+    top: 47.5%;
     border-radius: 10px;
     background-color: rgb(100, 50, 100);
     border: none;
 
-    font-size: 0px;
-    /*text size is also managed by javascript.*/
+    font-size: 150%;
     color: rgb(200, 150, 200);
     box-shadow: 0 0 50px rgba(100, 150, 200, 0.25);
 }
@@ -68,20 +60,17 @@
 }
 
 #RestartServer{
-    width: 0px;
-    height: 0px;
+    width: 25.25%;
+    height: 12.25%;
     position: absolute;
-    left: 0px;
-    top: 50px;
-    /*the width and height is managed by javascript.*/
-    transition-duration: 1.9s;
+    left: 70%;
+    top: 65%;
     border-radius: 10px;
     background-color: rgb(50, 75, 100);
     box-shadow: 0 0 50px rgba(100, 150, 200, 0.25);
     border: none;
 
-    font-size: 0px;
-    /*text size is also managed by javascript.*/
+    font-size: 150%;
     color: rgb(100, 200, 200);
 }
 #RestartServer:hover{
@@ -91,19 +80,17 @@
 }
 
 #ServerName{
-    width: 0px;
-    height: 0px;
+    width: 25.25%;
+    height: 20.5%;
     position: absolute;
-    left: 0px;
-    top: 50px;
-    /*the width and height is managed by javascript.*/
+    left: 2%;
+    top: 30%;
     transition-duration: 1.5s;
     border-radius: 10px;
     background-color: rgb(100, 40, 105);
     border: none;
 
-    font-size: 0px;
-    /*text size is also managed by javascript.*/
+    font-size: 200%;
     color: rgb(100, 150, 200);
     box-shadow: 0 0 50px rgba(100, 150, 200, 0.25);
 }
