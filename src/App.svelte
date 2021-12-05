@@ -1,16 +1,15 @@
-<script>
+<script language="ts">
+
 	let server = "None";
+
 	function start(){
 		// Logic here to make the server
 
 		server = prompt("Please enter a name for your server.");
 
-		if(server == ""){
+		if(server == "" || server == null){
 			server = "None";
 			start();
-		}
-		if(server == null){
-			server = "None";
 		}
 	}
 
@@ -40,7 +39,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 	<!-- Primary Meta Tags -->
-<title>Wizzer Panel — Servers</title>
+<title>Wizzer Panel</title>
 <meta name="title" content="Wizzer Panel — Servers">
 <meta name="description" content="Create your own server on Wizzer Today!">
 
@@ -55,6 +54,8 @@
 <meta property="twitter:url" content="https://wizzer-panel.netlify.app/">
 <meta property="twitter:title" content="Wizzer Panel — Servers">
 <meta property="twitter:description" content="Create your own server on Wizzer Today!">
+
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
 </svelte:head>
 
 <main>
@@ -63,11 +64,14 @@
 			<img src="./WizzerLogo.png" class="nav-icon" alt>
 		</div>	
 	</nav>
+
 	&nbsp;
+
 	<div class="text-center">
 	<h1>Current Server: {server}</h1>
 	<button class="btn btn-success" on:click="{start}">Start Server</button>
-	&nbsp;
 	<button class="btn btn-danger" on:click="{stop}">Stop Server</button>
+	&nbsp;
+
 	</div>
 </main>	
