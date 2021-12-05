@@ -4,7 +4,7 @@
 		// Logic here to make the server
 
 		server = prompt("Please enter a name for your server.");
-		
+
 		if(server == ""){
 			server = "None";
 			start();
@@ -43,14 +43,14 @@
 <main>
 	<nav class="navbar navbar-wizzer border">
 		<div class="container">
-			<img src="./WizzerLogo.png" class="nav-icon" alt="Wizzer"> <!--Svelte is annoying-->
-ext-center align-self-center">
-	<h1>Current Server: {server}</h1>
+			<img src="./WizzerLogo.png" class="nav-icon" alt>
+		</div>	
+	</nav>
 	&nbsp;
+	<div class="text-center">
+	<h1>Current Server: {server}</h1>
 	<button class="btn btn-success" on:click="{start}">Start Server</button>
 	&nbsp;
 	<button class="btn btn-danger" on:click="{stop}">Stop Server</button>
-</div>
-
-
+	</div>
 </main>	
