@@ -1,45 +1,63 @@
-<script lang="ts">
-	import { Navbar, NavbarBrand } from 'sveltestrap';
-	let serverName: string = "";
-	let oldName: string = "";
+<script>
+	let server = "None";
+	function start(){
+		// Logic here to make the server
 
-function startServer(){
-	serverName = prompt("Name your server:");
-	if(serverName == ""){
-		alert("ERROR: No name was specified");
-	}else{
-		oldName = serverName;
-		alert("Server Started");
+		server = prompt("Please enter a name for your server.");
+
+		if(server == ""){
+			server = "None";
+			start();
+		}
+		if(server == null){
+			server = "None";
+		}
 	}
-}
 
-function stopServer(){
-	alert("Server Stopped");
-	oldName = serverName;
-	serverName = "";
-}
+	function stop(){
+		// Logic here to stop the server
 
-function restartServer(){
-	alert("Server Restarted");
-	serverName = oldName;
-}
-
+		server = "None";
+	}
 </script>
 
+<style>
+	.nav-icon{
+		min-height: 50px;
+		min-width: 50px;
+		width: 10vw;
+		height: 10vw;
+		max-height: 100px;
+		max-width: 100px;
+	}
+	.navbar-wizzer{
+		background: #282864;
+	}
+</style>
 
 <svelte:head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </svelte:head>
 
 <main>
-	<div id="right">
-		<button class="btn btn-primary" on:click="{startServer}">Start Server</button>
-		<button class="btn btn-danger" on:click="{stopServer}">Stop Server</button>
-		<button class="btn btn-success" on:click="{restartServer}">Restart Server</button>
-		<h1>Server Name: {serverName}</h1>
-	</div>
-</main>	
+	<nav class="navbar navbar-wizzer border">
+		<div class="container">
+			<img src="./WizzerLogo.png" class="nav-icon">
+		</div>
+	  </nav>
 
-<style>
-</style>
+	  &nbsp;
+
+
+
+<div class="text-center align-self-center">
+	<h1>Current Server: {server}</h1>
+	&nbsp;
+	<button class="btn btn-success" on:click="{start}">Start Server</button>
+	&nbsp;
+	<button class="btn btn-danger" on:click="{stop}">Stop Server</button>
+</div>
+
+
+</main>	
